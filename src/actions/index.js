@@ -18,6 +18,7 @@ export const passwordChanged = (text) => {
 };
 
 export const loginUser = ({ email, password }) => {
+
   return (dispatch) => {
     firebase2.auth().signInWithEmailAndPassword(email, password)
       .then(user => {
